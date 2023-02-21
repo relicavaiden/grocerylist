@@ -8,9 +8,9 @@ export default function Home() {
   const [ items, setItems ] = React.useState([]);
   const [ tempText, setTempText ] = React.useState<string>();
 
-  const addItem = (text: string) => {
-    setItems([...items, text]);
-  };
+//   const addItem = (text: string) => {
+//     setItems([...items, text]);
+//   };
   return (
 
 
@@ -37,9 +37,9 @@ export default function Home() {
         <div className='main'>
           <h1>Add your items</h1>
           <form className="searchBox">
-            <input type="text" value={tempText} placeholder='What are we shopping for' onChange={(e) => {
-              setTempText(e.target.value);
-            }}/>
+<!--             <input type="text" value={tempText} placeholder='What are we shopping for' onChange={(e) => { -->
+<!--               setTempText(e.target.value); -->
+<!--             }}/> -->
             <button onClick={() => {
               addItem(tempText);
               setTempText('');
