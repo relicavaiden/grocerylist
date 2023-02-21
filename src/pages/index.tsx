@@ -5,8 +5,8 @@ import { use, useState } from 'react'
 
 export default function Home() {
 
-  const [ items, setItems ] = React.useState([]);
-  const [ tempText, setTempText ] = React.useState<string>();
+//   const [ items, setItems ] = React.useState([]);
+//   const [ tempText, setTempText ] = React.useState<string>();
 
 //   const addItem = (text: string) => {
 //     setItems([...items, text]);
@@ -34,9 +34,9 @@ export default function Home() {
             <li><a href=''>Meal Prep</a></li>
           </ul>
         </section>
-        <div className='main'>
+<!--         <div className='main'>
           <h1>Add your items</h1>
-          <form className="searchBox">
+          <form className="searchBox"> -->
 <!--             <input type="text" value={tempText} placeholder='What are we shopping for' onChange={(e) => { -->
 <!--               setTempText(e.target.value); -->
 <!--             }}/> -->
@@ -44,17 +44,17 @@ export default function Home() {
               addItem(tempText);
               setTempText('');
             }}>Submit</button> -->
-          </form>
+<!--           </form> -->
 <!--           <div>
             <ul>
-              {items.map((item, idx) => {
-                return (
-                  <li key={idx}>{item}</li>
-                )
-              })}
-            </ul>
-          </div> -->
-        </div>
+//               {items.map((item, idx) => {
+//                 return (
+//                   <li key={idx}>{item}</li>
+<!--                 ) -->
+<!--               })} -->
+<!--             </ul> -->
+<!--            </div> -->
+<!--         </div> -->
       </main>
     </>
   )
