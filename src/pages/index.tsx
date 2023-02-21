@@ -40,12 +40,12 @@ export default function Home() {
 <!--             <input type="text" value={tempText} placeholder='What are we shopping for' onChange={(e) => { -->
 <!--               setTempText(e.target.value); -->
 <!--             }}/> -->
-            <button onClick={() => {
+<!--             <button onClick={() => {
               addItem(tempText);
               setTempText('');
-            }}>Submit</button>
+            }}>Submit</button> -->
           </form>
-          <div>
+<!--           <div>
             <ul>
               {items.map((item, idx) => {
                 return (
@@ -53,7 +53,7 @@ export default function Home() {
                 )
               })}
             </ul>
-          </div>
+          </div> -->
         </div>
       </main>
     </>
